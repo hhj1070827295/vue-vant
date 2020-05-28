@@ -61,9 +61,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
                 [Icon.name]: Icon,
             },
     #### 全局引入参考main.js文件即可
-
-
-
-### rem和px单位的选择
-    1、该项目master分支使用postcss-pxtorem  基准值在postcss.config.js中进行配置，如果需要改变可以去看一下文档
-    2、如果要使用rem单位进行编写，切换到rem分支

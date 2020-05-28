@@ -21,8 +21,8 @@ import 'vant/lib/index.css';
 Vue.use(Vant);
 
 
-// flexable.js
-import  'lib-flexible';
+// 引入rem
+import '@/utils/rem.js'
 
 // 引入路由
 import router from './router'
