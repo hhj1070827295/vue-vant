@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <!-- <div @click="$router.push('/home-children/detail')">首页</div> -->
-    <van-image fit="contain" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    <van-image class="custom-img" fit="contain" src="https://img.yzcdn.cn/vant/cat.jpeg" />
     {{token}}{{name}}
   </div>
 </template>
@@ -33,11 +33,16 @@ export default {
         .catch(err => {
           console.log(err);
         });
-    },
-    
+    }
   }
 };
 </script>
 
 <style lang="scss">
+.custom-img {
+  width: 375px;
+  img {
+    width: 100%;
+  }
+}
 </style>

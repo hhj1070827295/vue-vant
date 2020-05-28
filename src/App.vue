@@ -33,7 +33,7 @@ export default {
   },
   created() {
     console.log(this.$route);
-    this.calcRem() 
+    // this.calcRem() //如果是使用postremcss单位来进行转化就不需要这个函数饿了
   },
   methods:{
     calcRem() {

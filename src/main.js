@@ -1,10 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-//引入rem自适应
-// import '@/utils/rem.js'
 
-import  '@/utils/flexable';
 // 引入vant样式
 
 // 引入浏览器样式重置
@@ -17,12 +14,15 @@ import '@/styles/mybase.css'
 // 引入vuex
 import store from './store'
 
-//全局引入有赞  如需局部引入有赞可以查看README.md文件
+// 引入vant
 import Vant from 'vant';
+// import 'vant/lib/index.css';
 import 'vant/lib/index.css';
-
 Vue.use(Vant);
 
+
+// flexable.js
+import  'lib-flexible';
 
 // 引入路由
 import router from './router'

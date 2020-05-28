@@ -22,11 +22,11 @@ module.exports = {
     // performance: {
     //     hints: false
     // },
-    runtimeCompiler: true, //关键点在这  
-    // css的处理
+    // runtimeCompiler: true, //关键点在这  
+    // // css的处理
     css: {
         // 当为true时，css文件名可省略 module 默认为 false
-        requireModuleExtension: false,
+        modules: false,
         // 是否将组件中的 CSS 提取至一个独立的 CSS 文件中,当作为一个库构建时，你也可以将其设置为 false 免得用户自己导入 CSS
         // 默认生产环境下是 true，开发环境下是 false
         extract: false,
@@ -37,8 +37,10 @@ module.exports = {
             css: {},
             less: {},
             sass: {},
-        }
+        },
+       
     },
+   
 
     chainWebpack: config => {
         config.plugins.delete('preload') // TODO: need test
