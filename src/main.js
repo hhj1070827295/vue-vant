@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 
 
-// 引入vant样式
 
 // 引入浏览器样式重置
 import 'normalize.css';
@@ -21,7 +20,6 @@ import 'vant/lib/index.css';
 Vue.use(Vant);
 
 
-// flexable.js
 import  'lib-flexible';
 
 // 引入路由
@@ -39,13 +37,8 @@ Object.keys(custom).forEach(key => {
 
 
 //引入权限
-
 import './permission.js'
 
-//用于判断是进入还是退出
-window.addEventListener('popstate', function () {
-    router.isBack = true
-},false)
 
 
 

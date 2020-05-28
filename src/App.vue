@@ -32,21 +32,10 @@ export default {
     }
   },
   created() {
+    console.log(process.env)
     console.log(this.$route);
-    // this.calcRem() //如果是使用postremcss单位来进行转化就不需要这个函数饿了
   },
   methods:{
-    calcRem() {
-      var bodyWidth = document.getElementsByTagName("body")[0].clientWidth;
-      var html = document.getElementsByTagName("html")[0];
-      //自适应最大宽度限制，避免页面资源展示失真
-      if (bodyWidth >= 750) {
-        html.style.fontSize = 100 + "px";
-        return;
-      }
-      var scale = bodyWidth / 750;
-      html.style.fontSize = scale * 100 + "px";
-    }
   }
 };
 </script>
