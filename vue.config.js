@@ -44,7 +44,6 @@ module.exports = {
 
     chainWebpack: config => {
         config.plugins.delete('preload') // TODO: need test
-        config.optimization.minimize(true);
         config.plugins.delete('prefetch') //移除预加载的资源
        
     },
